@@ -15,7 +15,7 @@ void run(Parg& pg);
 
 int program_options(Parg& pg)
 {
-  pg.name("euarel").version("0.1.0 (06.12.2018)");
+  pg.name("euarel").version("0.1.1 (06.12.2018)");
   pg.description("A CLI tool for URL percent-encoding and percent-decoding text.");
   pg.usage("[flags] [options] [--] [arguments]");
   pg.usage("[-e|--encode] [-f|--form] 'text'");

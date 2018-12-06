@@ -18,13 +18,14 @@ int program_options(Parg& pg)
   pg.name("euarel").version("0.1.0 (06.12.2018)");
   pg.description("A CLI tool for URL percent-encoding and percent-decoding text.");
   pg.usage("[flags] [options] [--] [arguments]");
-  pg.usage("[-e|-d] [-f] 'text'");
+  pg.usage("[-e|--encode] [-f|--form] 'text'");
+  pg.usage("[-d|--decode] [-f|--form] 'text'");
   pg.usage("[-v|--version]");
   pg.usage("[-h|--help]");
   pg.info("Examples", {
-    "euarel -e 'text to encode'",
-    "euarel -d 'text to decode'",
-    "euarel -df 'encode form data'",
+    "euarel --encode 'text to encode'",
+    "euarel --decode 'text to decode'",
+    "euarel -ef 'encode form data'",
     "printf 'redirect text to encode' | euarel -e",
     "euarel --help",
     "euarel --version",
